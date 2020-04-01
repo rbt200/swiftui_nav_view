@@ -13,6 +13,10 @@
 		E626D0E624352C490008B8AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E626D0E524352C490008B8AC /* Assets.xcassets */; };
 		E626D0E924352C490008B8AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E626D0E824352C490008B8AC /* Preview Assets.xcassets */; };
 		E626D0EC24352C490008B8AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E626D0EA24352C490008B8AC /* LaunchScreen.storyboard */; };
+		E626D0F624352DF70008B8AC /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D0F524352DF70008B8AC /* GameModel.swift */; };
+		E626D0F824352E5F0008B8AC /* GamesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D0F724352E5F0008B8AC /* GamesScreen.swift */; };
+		E626D0FA243533940008B8AC /* GameDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D0F9243533940008B8AC /* GameDetailsScreen.swift */; };
+		E626D0FD2435381C0008B8AC /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D0FC2435381C0008B8AC /* DB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		E626D0E824352C490008B8AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E626D0EB24352C490008B8AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E626D0ED24352C490008B8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E626D0F524352DF70008B8AC /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		E626D0F724352E5F0008B8AC /* GamesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesScreen.swift; sourceTree = "<group>"; };
+		E626D0F9243533940008B8AC /* GameDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailsScreen.swift; sourceTree = "<group>"; };
+		E626D0FC2435381C0008B8AC /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 		E626D0DE24352C470008B8AC /* swiftui_nav_view */ = {
 			isa = PBXGroup;
 			children = (
+				E626D0FB243537FF0008B8AC /* DB */,
+				E626D0F324352DC30008B8AC /* Models */,
+				E626D0F424352DCD0008B8AC /* Screens */,
 				E626D0DF24352C470008B8AC /* AppDelegate.swift */,
 				E626D0E124352C470008B8AC /* SceneDelegate.swift */,
 				E626D0E324352C470008B8AC /* ContentView.swift */,
@@ -73,6 +84,31 @@
 				E626D0E824352C490008B8AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E626D0F324352DC30008B8AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E626D0F524352DF70008B8AC /* GameModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E626D0F424352DCD0008B8AC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E626D0F724352E5F0008B8AC /* GamesScreen.swift */,
+				E626D0F9243533940008B8AC /* GameDetailsScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E626D0FB243537FF0008B8AC /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				E626D0FC2435381C0008B8AC /* DB.swift */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E626D0FA243533940008B8AC /* GameDetailsScreen.swift in Sources */,
 				E626D0E024352C470008B8AC /* AppDelegate.swift in Sources */,
+				E626D0F824352E5F0008B8AC /* GamesScreen.swift in Sources */,
+				E626D0F624352DF70008B8AC /* GameModel.swift in Sources */,
 				E626D0E224352C470008B8AC /* SceneDelegate.swift in Sources */,
 				E626D0E424352C470008B8AC /* ContentView.swift in Sources */,
+				E626D0FD2435381C0008B8AC /* DB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
